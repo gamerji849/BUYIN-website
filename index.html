@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Buyin2</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BUYIN | Official Site</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #EDE0D4;
+      color: #7F5539;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s ease-out forwards;
+      scroll-behavior: smooth;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: #EDEDE9;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 10px;
+      flex-wrap: wrap;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    header img {
+      height: 150px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #EDE0D4;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #DDB892;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #E6CCB2, #DDB892);
+      color: #7F5539;
+      text-align: center;
+      padding: 60px 20px;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      background-color: #F3EDE5;
+    }
+
+    .products img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .products img:nth-child(1) { animation-delay: 0.1s; }
+    .products img:nth-child(2) { animation-delay: 0.2s; }
+    .products img:nth-child(3) { animation-delay: 0.3s; }
+    .products img:nth-child(4) { animation-delay: 0.4s; }
+    .products img:nth-child(5) { animation-delay: 0.5s; }
+    .products img:nth-child(6) { animation-delay: 0.6s; }
+    .products img:nth-child(7) { animation-delay: 0.7s; }
+    .products img:nth-child(8) { animation-delay: 0.8s; }
+    .products img:nth-child(9) { animation-delay: 0.9s; }
+
+    .products img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 20px rgba(124, 85, 57, 0.3);
+    }
+
+    .amazon-link {
+      text-align: center;
+      margin-top: -20px;
+      padding-bottom: 40px;
+    }
+
+    .amazon-link a {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background-color: #B08968;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .amazon-link a:hover {
+      background-color: #7F5539;
+    }
+
+    footer {
+      background-color: #9C6644;
+      color: #EDE0D4;
+      padding: 40px 20px;
+    }
+
+    footer ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      list-style: none;
+      padding-top: 20px;
+      justify-content: center;
+    }
+
+    footer li {
+      flex: 1 1 150px;
+    }
+
+    footer h3 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+ <img src="https://i.ibb.co/zh1Wbgyg/In-Shot-20250416-203554707.png" alt="BUYIN logo">
+     </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Welcome to BUYIN</h1>
+    <p>Discover the latest in style and performance</p>
+  </div>
+    <section class="products">
+  <div>
+    <img src="https://i.ibb.co/8Ddkj2HW/IMG-20250420-115033.jpg" />
+    <div class="amazon-link">
+      <a href="https://www.amazon.in/s?k=BUYIN" target="_blank"><i class="fab fa-amazon"></i> Available on Amazon</a>
+    </div>
+  </div>
+  <div>
+    <img src="https://i.ibb.co/mFSMG7wV/IMG-20250420-114845.jpg" />
+    <div class="amazon-link">
+      <a href="https://www.amazon.in/s?k=BUYIN" target="_blank"><i class="fab fa-amazon"></i> Available on Amazon</a>
+    </div>
+  </div>
+  <div>
+    <img src="https://i.ibb.co/Dg4HfdVw/IMG-20250420-115020.jpg" />
+    <div class="amazon-link">
+      <a href="https://www.amazon.in/s?k=BUYIN" target="_blank"><i class="fab fa-amazon"></i> Available on Amazon</a>
+    </div>
+  </div>
+  <div>
+    <img src="https://i.ibb.co/VpcqkvZP/IMG-20250420-114942.jpg" />
+    <div class="amazon-link">
+      <a href="https://www.amazon.in/s?k=BUYIN" target="_blank"><i class="fab fa-amazon"></i> Available on Amazon</a>
+    </div>
+  </div>
+  <div>
+    <img src="https://i.ibb.co/3510YfsD/IMG-20250420-114924.jpg" />
+    <div class="amazon-link">
+      <a href="https://www.amazon.in/s?k=BUYIN" target="_blank"><i class="fab fa-amazon"></i> Available on Amazon</a>
+    </div>
+  </div>
+  <div>
+    <img src="https://i.ibb.co/JFy30nGt/IMG-20250420-115119.jpg" />
+    <div class="amazon-link">
+      <a href="https://www.amazon.in/s?k=BUYIN" target="_blank"><i class="fab fa-amazon"></i> Available on Amazon</a>
+    </div>
+  </div>
+  <div>
+    <img src="https://i.ibb.co/DD5VkT0S/IMG-20250420-115105.jpg" />
+    <div class="amazon-link">
+      <a href="https://www.amazon.in/s?k=BUYIN" target="_blank"><i class="fab fa-amazon"></i> Available on Amazon</a>
+    </div>
+  </div>
+  <div>
+    <img src="https://i.ibb.co/JWLdLw46/IMG-20250420-115050.jpg" />
+    <div class="amazon-link">
+      <a href="https://www.amazon.in/s?k=BUYIN" target="_blank"><i class="fab fa-amazon"></i> Available on Amazon</a>
+    </div>
+  </div>
+  <div>
+    <img src="https://i.ibb.co/1fv4LTqF/IMG-20250420-114959.jpg" />
+    <div class="amazon-link">
+      <a href="https://www.amazon.in/s?k=BUYIN" target="_blank"><i class="fab fa-amazon"></i> Available on Amazon</a>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <h3>BUYIN - Elevate Your Style</h3>
+    <ul>
+      <li><strong>Support</strong><br>Contact<li><strong><br>Privacy Policy<br>Terms of Use</li>
+    </ul>
+  </footer>
+
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>

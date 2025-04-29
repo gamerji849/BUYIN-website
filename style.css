@@ -1,0 +1,17 @@
+.products > div {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+}
+
+.products .amazon-link {
+
+  margin-top: 10px;
+
+  padding-bottom: 20px;
+
+}
